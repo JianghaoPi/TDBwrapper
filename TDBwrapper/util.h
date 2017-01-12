@@ -1,6 +1,7 @@
 #ifndef _UTIL_H_
 #define _UTIL_H_
 #include "TDBAPIStruct.h"
+#include "TDBAPI.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -1,5 +1,4 @@
-g++ -c -fpic TDBAPI.cpp -I./
+#!/usr/bin/env bash
+g++ util.cpp -fPIC -L. -lTDBAPI -o libutil.so
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./
-
-g++ -g -o TDBAPI.out TDBAPI.o -L./ -lTDBAPI
+g++ -shared -fpic -lm -ldl -o libutil.so util.cpp
